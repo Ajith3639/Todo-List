@@ -15,9 +15,11 @@
         <div class="container-fluid">
           <a class="navbar-brand ">Todo List</a>
           <form class="d-flex" action="/create" method="POST" >
-            <input class="form-control me-2" name="createitem" type="search" placeholder="Create new list" aria-label="Search">
+            <textarea class="form-control" name="postBody" cols="38" rows="1" placeholder="Create new list / move to existing list"></textarea>
             <input class="btn btn-outline-success"  type="submit" ></button>
           </form>
+
+         
         </div>
       </nav>
 
@@ -57,4 +59,6 @@
 <footer>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>
