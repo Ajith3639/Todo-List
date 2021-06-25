@@ -1,8 +1,11 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #ffc400 50%, #bcbfc7 50%);
+  
+ 
   min-height: 1000px;
   font-family: 'helvetica neue';
+}
+body{
+  background-color: aqua;
 }
 
 h1 {
@@ -15,6 +18,7 @@ h1 {
   max-width: 400px;
   margin: 50px auto;
   background: white;
+  background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
@@ -29,7 +33,7 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #ffffff;
 }
 
 .item:last-child {
@@ -63,8 +67,8 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
-  color: #fff;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
@@ -83,16 +87,12 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A683E3;
+  box-shadow: inset 0 -3px 0 0 #000000;
 }
 
 ::placeholder {
-  color: grey;
+  color: rgb(119, 110, 110);
   opacity: 1;
 }
 
-footer {
-  color: white;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
+

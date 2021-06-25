@@ -18,7 +18,7 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model("Item", itemSchema);
 
 const one = new Item({
-  name: "welcome todo list",
+  name: "Welcome todo list",
 });
 const two = new Item({
   name: "Hit the + button to add elements",
@@ -115,6 +115,12 @@ app.post("/delete", function (req, res) {
            }
        })
   }
+});
+
+app.post("/create",function(req,res){
+  const createElement=req.body.createitem;
+  res.redirect("/" +createElement);
+
 });
 
 app.listen(3000, function (req, res) {

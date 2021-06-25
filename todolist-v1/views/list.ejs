@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
     
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <ul>
-      <li>Todo List</li>
-  </ul>
+  
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ">Todo List</a>
+          <form class="d-flex" action="/create" method="POST" >
+            <input class="form-control me-2" name="createitem" type="search" placeholder="Create new list" aria-label="Search">
+            <input class="btn btn-outline-success"  type="submit" ></button>
+          </form>
+        </div>
+      </nav>
 
 
-
-
+  
     <div class="box" id="heading">
          <h1><%= nowDay %></h1>
         </div>
@@ -46,6 +52,7 @@
     
     </form>
 </div>
+
 </body>
 <footer>
 
