@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    
+   
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+  <ul>
+      <li>Todo List</li>
+  </ul>
+
+
+
+
     <div class="box" id="heading">
          <h1><%= nowDay %></h1>
         </div>
@@ -20,10 +29,11 @@
             <form action="/delete" method="POST">
                 <div class="item">
                 <input type="checkbox" value="<%= item._id %>" name="checkbox" onChange="this.form.submit()">
-           
+               
               <p><%= item.name %></p>   
                
             </div>
+            <input type="hidden" name="listName" value="<%= nowDay %>">
         </form>
             
        
@@ -37,4 +47,7 @@
     </form>
 </div>
 </body>
+<footer>
+
+</footer>
 </html>
